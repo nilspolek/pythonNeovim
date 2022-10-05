@@ -1,6 +1,6 @@
 import vim, subprocess
 
-class initPlk:
+class InitPlk:
     def initPython(self) -> None:
         print("Es hat funktionier")
         subprocess.run("neofetch")
