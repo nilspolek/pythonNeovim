@@ -3,7 +3,7 @@ if !has('python3')
     finish
 endif
 
-python3 import initialisierungPlug.initialisierungPlug
-python3 initialierer = initialisierungPlug.initialisierungPlug.InitialisierungPlug()
+python3 import nilspolek.initPlk
+python3 initPlk = nilspolek.initPlk.InitPlk()
 
-command! Pythoninit python3 finder.initPython()
+command! Pythoninit python3 initPlk.initPython()
