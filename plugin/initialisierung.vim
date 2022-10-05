@@ -4,6 +4,6 @@ if !has('python3')
 endif
 
 python3 import nilspolek.initPlk
-python3 initPlk = nilspolek.initPlk.Klasse()
+python3 test = nilspolek.initPlk.Klasse()
 
-command! Pythoninit python3 initPlk.initPython()
+command! Pythoninit python3 test.initPython()
