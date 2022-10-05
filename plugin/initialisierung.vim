@@ -4,6 +4,6 @@ if !has('python3')
 endif
 
 python3 import nilspolek.initPlk
-python3 initPlk = nilspolek.initPlk.InitPlk()
+python3 initPlk = nilspolek.initPlk.InitPasdadlk()
 
 command! Pythoninit python3 initPlk.initPython()
