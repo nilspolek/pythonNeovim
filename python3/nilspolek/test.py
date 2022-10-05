@@ -1,3 +1,0 @@
-import nilspolek.initPlk
-
-
