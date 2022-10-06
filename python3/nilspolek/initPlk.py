@@ -4,7 +4,7 @@ class Klasse:
 
     def initPython(self) -> None:
         print("Es hat funktionier")
-        print(vim.eval("expand('%:t:r')"))
+        print(vim.eval("&filetype"))
         return True
     
     def buildJava(self) -> None:
