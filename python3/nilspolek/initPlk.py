@@ -21,17 +21,17 @@ class Klasse:
     
     def build(self) -> None:
         if getFileType() == "java":
-            subprocess.run(f"javac {getFileDir()}")
+            subprocess.run("javac {}".format(getFileDir()))
             return True
         print("Filetype not supported")
         return True
     
     def run(self) -> None:
         if getFileType() == "java":
-            subprocess.run(f"javac {getFileDir()}")
+            subprocess.run("javac {}".format(getFileDir()))
             fileWithoutEnd = os.path.splitext(getFileDir())[0]
-            subprocess.run(f"java {fileWithoutEnd}")
+            subprocess.run("java {}".format(fileWithoutEnd))
         
         if getFileType() == "Python":
-            subprocess.run(f"python {getFileDir()}")
+            subprocess.run("python {}".format(getFileDir()))
         
