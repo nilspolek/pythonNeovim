@@ -29,9 +29,9 @@ class Klasse:
     
     def run(self) -> None:
         if getFileType() == "java":
-            subprocess.Popen("javac {}".format(getFileDir()))
+            subprocess.Popen("javac {}".format(getFileDir()), shell=True)
             fileWithoutEnd = os.path.splitext(getFileDir())[0]
-            subprocess.Popen("java {}".format(fileWithoutEnd))
+            subprocess.Popen("java {}".format(fileWithoutEnd), shell=True)
         
         if getFileType() == "Python":
             subprocess.run("python {}".format(getFileDir()))
