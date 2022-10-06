@@ -19,14 +19,14 @@ class Klasse:
         print(vim.eval("expand('%:p')"))
         return True
     
-    def Build(self) -> None:
+    def build(self) -> None:
         if getFileType() == "java":
             subprocess.run(f"javac {getFileDir()}")
             return True
         print("Filetype not supported")
         return True
     
-    def Run(self) -> None:
+    def run(self) -> None:
         if getFileType() == "java":
             subprocess.run(f"javac {getFileDir()}")
             subprocess.run(f"java {getDir()}")
