@@ -21,7 +21,7 @@ class Klasse:
     
     def build(self) -> None:
         if getFileType() == "java":
-            subprocess.run("javac {}".format(getFileDir()))
+            subprocess.Popen("javac {}".format(getFileDir()), shell=True)
             return True
         print("Filetype not supported")
         return True
