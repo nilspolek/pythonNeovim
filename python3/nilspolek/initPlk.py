@@ -1,4 +1,4 @@
-import vim, subprocess
+import vim, subprocess, os
 
 # get file vim.eval("expand('%:p')")
 # get directory vim.eval("expand('%:p:h')")
@@ -29,6 +29,9 @@ class Klasse:
     def run(self) -> None:
         if getFileType() == "java":
             subprocess.run(f"javac {getFileDir()}")
-            subprocess.run(f"java {getDir()}")
-
+            fileWithoutEnd = os.path.splitext(getFileDir())[0]
+            subprocess.run(f"java {fileWithoutEnd}")
+        
+        if getFileType() == "Python":
+            subprocess.run(f"python {getFileDir()}")
         
