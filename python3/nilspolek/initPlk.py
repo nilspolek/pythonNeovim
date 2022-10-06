@@ -1,8 +1,12 @@
-import vim, subprocess
+import vim
 
 class Klasse:
 
     def initPython(self) -> None:
         print("Es hat funktionier")
-        subprocess.run("firefox-developer-edition")
+        print(vim.eval("expand(%:t:r)"))
         return True
+    
+    def buildJava(self) -> None:
+        pass
+        
