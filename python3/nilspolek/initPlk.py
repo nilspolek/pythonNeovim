@@ -16,7 +16,7 @@ class Klasse:
 
     def initPython(self) -> None:
         print("Es hat funktionier")
-        print(vim.eval("expand('%:p')"))
+        print(getFileDir())
         return True
     
     def build(self) -> None:
