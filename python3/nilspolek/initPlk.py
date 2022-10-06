@@ -3,16 +3,16 @@ import vim, subprocess
 # get file vim.eval("expand('%:p')")
 # get directory vim.eval("expand('%:p:h')")
 
+def getDir():
+    return vim.eval("expand('%:p:h')")
+
+def getFileDir():
+    return vim.eval("expand('%:p')")
+
+def getFileType():
+    return vim.eval("&filetype")
+
 class Klasse:
-
-    def getDir(self) -> str:
-        return vim.eval("expand('%:p:h')")
-
-    def getFileDir(self) -> str:
-        return vim.eval("expand('%:p')")
-    
-    def getFileType(self) -> str:
-        return vim.eval("&filetype")
 
     def initPython(self) -> None:
         print("Es hat funktionier")
